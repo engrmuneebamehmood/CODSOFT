@@ -1,53 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const display = document.getElementById("display");
-  const buttons = document.querySelectorAll(".button");
-  let currentInput = "";
-  let prevInput = "";
-  let operator = "";
-
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const buttonValue = button.textContent;
-
-      if (!isNaN(buttonValue) || buttonValue === ".") {
-        currentInput += buttonValue;
-        display.textContent = currentInput;
-      } else if (buttonValue === "C") {
-        clearCalculator();
-      } else if (buttonValue === "=") {
-        performCalculation();
-      } else {
-        operator = buttonValue;
-        prevInput = currentInput;
-        currentInput = "";
-        display.textContent = `${prevInput} ${operator}`;
+function Solve(val) {
+         var v = document.getElementById('res');
+         v.value += val;
       }
-    });
-  });
-
-  function clearCalculator() {
-    currentInput = "";
-    prevInput = "";
-    operator = "";
-    display.textContent = "0";
-  }
-
-  function performCalculation() {
-    const num1 = parseFloat(prevInput);
-    const num2 = parseFloat(currentInput);
-
-    if (operator === "+") {
-      currentInput = (num1 + num2).toString();
-    } else if (operator === "-") {
-      currentInput = (num1 - num2).toString();
-    } else if (operator === "*") {
-      currentInput = (num1 * num2).toString();
-    } else if (operator === "/") {
-      currentInput = (num1 / num2).toString();
-    }
-
-    display.textContent = currentInput;
-    prevInput = "";
-    operator = "";
-  }
-});
+      function Result() {
+         var num1 = document.getElementById('res').value;
+         var num2 = eval(num1);
+         document.getElementById('res').value = num2;
+      }
+      function Clear() {
+         var inp = document.getElementById('res');
+         inp.value = '';
+      }
+      function Back() {
+         var ev = document.getElementById('res');
+         ev.value = ev.value.slice(0,-1);
+      }
