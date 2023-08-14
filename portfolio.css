@@ -1,0 +1,241 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Global styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Top navigation bar */
+.top-nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.top-nav li {
+  margin-right: 20px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #ffd700;
+}
+
+/* Section styles */
+section {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* About Me and Skills section */
+.about-content, .skills-content, .projects-content, .contact-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.circle-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #fff; /* Add white border */
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-image img {
+  max-width: 350%;
+  max-height: 350%;
+  margin-bottom: -80px;
+ 
+}
+  
+
+
+
+.content {
+  flex: 1;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+
+.content p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/* Skills and Projects section */
+.skills-content ul, .projects-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Project images */
+#projects {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* ... (previous CSS code) ... */
+
+/* Projects section */
+/* ... (previous CSS code) ... */
+
+/* Projects section */
+#projects {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Adjust the gap between projects as needed */
+}
+
+.project {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px; /* Adjust the maximum width of each project */
+}
+
+.project img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.project h2{
+  padding: 3rem 0;
+}
+
+/* ... (remaining CSS code) ... */
+
+
+/* Contact section */
+.contact-content {
+  text-align: center;
+}
+
+.contact-content h2 {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Add this line to center-align the text */
+  margin: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.contact-social i {
+  margin-right: 5px;
+}
+
+/* ... (remaining CSS code) ... */
+
+#skills {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-list p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+}
